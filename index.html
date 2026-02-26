@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Top Những Món Ăn Ngon Ở Việt Nam</title>
+
+<style>
+body{
+font-family: Arial;
+margin:0;
+background:#f4f4f4;
+text-align:center;
+}
+
+h1{
+background:#a4161a;
+color:white;
+padding:20px;
+margin:0;
+}
+
+.food{
+display:inline-block;
+background:white;
+width:250px;
+margin:20px;
+padding:15px;
+border-radius:10px;
+box-shadow:0 4px 8px gray;
+transition:0.3s;
+cursor:pointer;
+}
+
+.food:hover{
+transform:scale(1.1);
+}
+
+.food img{
+width:100%;
+height:160px;
+border-radius:10px;
+}
+
+.detail{
+display:none;
+padding:30px;
+background:white;
+text-align:left;
+}
+
+.detail img{
+display:block;
+margin:auto;
+width:450px;
+border-radius:10px;
+}
+
+table{
+border-collapse:collapse;
+margin:auto;
+margin-top:20px;
+}
+
+table, th, td{
+border:1px solid black;
+padding:10px;
+}
+
+button{
+margin-top:20px;
+padding:10px 20px;
+background:#a4161a;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+</style>
+
+<script>
+function showDetail(id){
+document.getElementById("home").style.display="none";
+var all=document.getElementsByClassName("detail");
+for(var i=0;i<all.length;i++){
+all[i].style.display="none";
+}
+document.getElementById(id).style.display="block";
+}
+
+function goHome(){
+var all=document.getElementsByClassName("detail");
+for(var i=0;i<all.length;i++){
+all[i].style.display="none";
+}
+document.getElementById("home").style.display="block";
+}
+</script>
+</head>
+
+<body>
+
+<h1>🌏 9 MÓN ĂN NỔI TIẾNG VIỆT NAM</h1>
+
+<div id="home">
+
+<div class="food" onclick="showDetail('pho')">
+<img src="https://fohlafood.vn/cdn/shop/articles/bi-quyet-nau-phi-bo-ngon-tuyet-dinh.webp?v=1734785797">
+<h3>Phở</h3>
+</div>
+
+<div class="food" onclick="showDetail('banhmi')">
+<img src="https://vcdn1-dulich.vnecdn.net/2025/10/21/z7139679302136c1f0d8c2350d7a32-3891-3736-1761024873.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=M-gTCg0TJjuQoUz8RDDOpg">
+<h3>Bánh mì</h3>
+</div>
+
+<div class="food" onclick="showDetail('bunbo')">
+<img src="https://cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/Picture/News/News_expe_15656/15656.png?version=222248">
+<h3>Bún bò Huế</h3>
+</div>
+
+<div class="food" onclick="showDetail('comtam')">
+<img src="https://static.vinwonders.com/production/com-tam-sai-gon-banner.jpg">
+<h3>Cơm tấm</h3>
+</div>
+
+<div class="food" onclick="showDetail('buncha')">
+<img src="https://khaihoanphuquoc.com.vn/wp-content/uploads/2023/08/cach-lam-nuoc-mam-bun-cha-02.jpg">
+<h3>Bún chả</h3>
+</div>
+
+<div class="food" onclick="showDetail('banhxeo')">
+<img src="https://i.ytimg.com/vi/hxI-i5jAeB8/maxresdefault.jpg">
+<h3>Bánh xèo</h3>
+</div>
+
+<div class="food" onclick="showDetail('goicuon')">
+<img src="https://cdn.netspace.edu.vn/images/2020/04/25/cach-lam-goi-cuon-tom-thit-cuc-ki-hap-dan-245587-800.jpg">
+<h3>Gỏi cuốn</h3>
+</div>
+
+<div class="food" onclick="showDetail('huutieu')">
+<img src="https://i-giadinh.vnecdn.net/2023/05/15/Bc8Thnhphm18-1684125639-9811-1684125654.jpg">
+<h3>Hủ tiếu</h3>
+</div>
+
+<div class="food" onclick="showDetail('miquang')">
+<img src="https://i.ytimg.com/vi/TTWTwhV9Zx0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAhmu_K6V9ul_4tCTdpV8_DCd2rHA">
+<h3>Mì Quảng</h3>
+</div>
+
+</div>
+
+<!-- PHỞ -->
+<div id="pho" class="detail">
+<h2>PHỞ</h2>
+<img src="https://www.unileverfoodsolutions.com.vn/dam/global-ufs/mcos/phvn/vietnam/calcmenu/recipes/VN-recipes/fish-&-other-seafood-dishes/Ph%E1%BB%9F-B%C3%B2/recipe-beef1260.jpg">
+<p>Phở là món ăn truyền thống, niềm tự hào ẩm thực Việt Nam, nổi bật với nước dùng đậm đà ninh từ xương, bánh phở mềm và thịt (bò/gà) tươi ngon. Xuất hiện từ cuối thế kỷ 19, phở kết hợp tinh tế giữa hương vị bò hầm Pháp và mì Trung Quốc. Phở Bắc thanh nhẹ, phở Nam phong phú rau thơm, tạo nên nét đặc trưng vùng miền
+</p>
+<h3>Nguyên liệu</h3>
+<ul>
+<li>Xương bò ninh 6–8 tiếng</li>
+<li>Bánh phở từ bột gạo</li>
+<li>Thịt bò tái hoặc chín</li>
+<li>Hành, gừng nướng</li>
+<li>Quế, hồi, thảo quả</li>
+<li>Rau thơm, giá đỗ</li>
+</ul>
+<h3>Giá bán</h3>
+<table>
+<tr><th>Loại</th><th>Giá</th></tr>
+<tr><td>Phở thường</td><td>40.000 – 50.000đ</td></tr>
+<tr><td>Phở đặc biệt</td><td>55.000 – 70.000đ</td></tr>
+</table>
+<button onclick="goHome()">⬅ Quay lại</button>
+</div>
+
+<!-- BÁNH MÌ -->
+<div id="banhmi" class="detail">
+<h2>BÁNH MÌ</h2>
+<img src="https://media.vov.vn/sites/default/files/styles/large/public/2024-12/cach_an_banh_mi_1.jpg">
+<p>Bánh mì Việt Nam là biểu tượng ẩm thực đường phố nổi tiếng toàn cầu, có nguồn gốc từ bánh baguette Pháp được "Việt hóa" từ thế kỷ 19. Đặc trưng với vỏ giòn rụm, ruột xốp nhẹ, bánh mì thường kẹp pate, chả lụa, thịt nướng, đồ chua, rau thơm và nước sốt. Đây là món ăn "ngon, bổ, rẻ", đa dạng vùng miền và được vinh danh là một trong những món sandwich ngon nhất thế giới.
+</p>
+<h3>Nguyên liệu</h3>
+<ul>
+<li>Bánh mì baguette</li>
+<li>Pate gan</li>
+<li>Thịt nguội, chả lụa</li>
+<li>Dưa leo, ngò rí</li>
+<li>Đồ chua</li>
+<li>Nước sốt đặc trưng</li>
+</ul>
+<h3>Giá bán</h3>
+<table>
+<tr><th>Loại</th><th>Giá</th></tr>
+<tr><td>Bánh mì thịt</td><td>20.000 – 25.000đ</td></tr>
+<tr><td>Bánh mì đặc biệt</td><td>30.000 – 35.000đ</td></tr>
+</table>
+<button onclick="goHome()">⬅ Quay lại</button>
+</div>
+
+<!-- BÚN BÒ HUẾ -->
+<div id="bunbo" class="detail">
+<h2>BÚN BÒ HUẾ</h2>
+<img src="https://i.ytimg.com/vi/CSI9ildGX9s/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCxhRIyoYY7k9ZuxY0YOC9jNFLapg">
+<p>Bún bò Huế là đặc sản nổi tiếng cố đô, đặc trưng bởi nước dùng đậm đà mùi mắm ruốc, sả và vị cay nồng. Một tô bún chuẩn vị bao gồm bún sợi to, thịt bò (nạm/bắp), giò heo, chả cua, tiết, nước dùng màu cam đỏ, ăn kèm rau sống như bắp chuối bào, giá đỗ, tạo nên sự cân bằng hoàn hảo về hương vị.Bún bò Huế không chỉ là một món ăn sáng mà còn phổ biến cả ngày, là nét văn hóa đặc sắc khiến du khách nhớ mãi khi đến cố đô.</p>
+<h3>Nguyên Liệu</h3>
+<ul>
+<li>Xương bò, giò heo</li>
+<li>Bún sợi to</li>
+<li>Sả, ớt, mắm ruốc</li>
+<li>Rau sống</li>
+</ul>
+<table>
+<tr><th>Giá</th><th>Mức</th></tr>
+<tr><td>45.000 – 65.000đ</td><td>Tùy loại</td></tr>
+</table>
+<button onclick="goHome()">⬅ Quay lại</button>
+</div>
+
+<!-- CƠM TẤM -->
+<div id="comtam" class="detail">
+<h2>CƠM TẤM</h2>
+<img src="https://i-giadinh.vnecdn.net/2024/03/07/7-Hoan-thien-thanh-pham-1-6244-1709800134.jpg">
+<p>Cơm tấm là món ăn đặc sản bình dân, biểu tượng văn hóa ẩm thực Sài Gòn, nổi tiếng với nguyên liệu chính từ gạo vỡ (tấm), ăn kèm sườn nướng, bì, chả trứng, mỡ hành và nước mắm chua ngọt. Xuất thân từ món ăn tiết kiệm của người lao động, cơm tấm nay phổ biến mọi lúc (sáng, trưa, tối) và được nâng tầm thành món ăn đặc trưng. Phổ biến từ lề đường đến nhà hàng, là món "quốc dân" ăn bất kể thời điểm nào trong ngày. Món ăn dân dã, bình dân nhưng hương vị vô cùng đậm đà, quyến rũ.
+</p>
+<h3>Nguyên Liệu</h3>
+<ul>
+<li>Cơm tấm</li>
+<li>Sườn nướng</li>
+<li>Bì, chả trứng</li>
+<li>Nước mắm pha</li>
+</ul>
+<table>
+<tr><th>Giá</th><th>Mức</th></tr>
+<tr><td>35.000 – 60.000đ</td><td>Tùy phần</td></tr>
+</table>
+<button onclick="goHome()">⬅ Quay lại</button>
+</div>
+
+<!-- Các món còn lại -->
+<div id="buncha" class="detail">
+<h2>BÚN CHẢ</h2>
+<img src="https://cooponline.vn/tin-tuc/wp-content/uploads/2025/10/hoc-cach-lam-bun-cha-mien-bac-chuan-ha-noi-tai-nha.png">
+<p>Bún chả là món ăn đặc sản truyền thống nổi tiếng của Hà Nội, bao gồm bún tươi, chả thịt lợn nướng than hoa (chả miếng và chả viên) ăn kèm nước chấm chua ngọt và rau sống. Món ăn đặc trưng bởi hương vị thơm lừng, đậm đà, thường được dùng như bữa trưa, thể hiện tinh tế nét văn hóa ẩm thực bình dị của đất kinh kỳ. Bún chả là món quà ẩm thực có sức sống lâu bền, là "quốc hồn quốc túy" đặc trưng của thủ đô Hà Nội.</p>
+<h3>Nguyên Liệu</h3>
+<ul>
+<li>Bún tươi</li>
+<li>Thịt heo nướng</li>
+<li>Nước mắm pha chua ngọt</li>
+<li>Rau sống</li>
+</ul>
+<table>
+<tr><th>Giá</th><th>40.000 – 60.000đ</th></tr>
+</table>
+<button onclick="goHome()">⬅ Quay lại</button>
+</div>
+
+<div id="banhxeo" class="detail">
+<h2>BÁNH XÈO</h2>
+<img src="https://i-giadinh.vnecdn.net/2023/09/19/Buoc-10-Thanh-pham-1-1-5225-1695107554.jpg">
+<p>Bánh xèo là món bánh dân dã nổi tiếng của Việt Nam, đặc trưng bởi lớp vỏ bột gạo vàng giòn, nhân tôm thịt, giá đỗ đậm đà. Tên gọi xuất phát từ âm thanh "xèo xèo" khi đổ bột vào chảo nóng. Bánh có hai loại chính: bánh xèo miền Trung nhỏ giòn và bánh xèo miền Tây/Nam Bộ kích thước lớn, dai ngon, thường ăn kèm rau sống và nước mắm chua ngọt. Có nguồn gốc từ miền Trung (đặc biệt phổ biến thời Tây Sơn) và được biến tấu phù hợp theo từng vùng miền. Bánh thường có màu vàng ươm nhờ bột nghệ (hoặc bột gạo tự nhiên) và mùi thơm béo của nước cốt dừa, đặc biệt là ở miền Nam. Miền Trung thường cuốn thêm bánh tráng và chấm mắm nêm hoặc nước mắm pha, trong khi miền Tây thường cuốn rau và chấm nước mắm chua ngọt. Đây là món ăn biểu tượng, thể hiện nét văn hóa ẩm thực mộc mạc, bình dị nhưng tinh tế của người Việt, được du khách quốc tế rất yêu thích.</p>
+<h3>Nguyên Liệu</h3>
+<ul>
+<li>Bột gạo</li>
+<li>Tôm, thịt</li>
+<li>Giá đỗ</li>
+<li>Rau sống</li>
+</ul>
+<table>
+<tr><th>Giá</th><th>30.000 – 50.000đ</th></tr>
+</table>
+<button onclick="goHome()">⬅ Quay lại</button>
+</div>
+
+<div id="goicuon" class="detail">
+<h2>GỎI CUỐN</h2>
+<img src="https://static.vinwonders.com/production/goi-cuon-sai-gon-12.jpeg">
+<p>Gỏi cuốn (hay nem cuốn) là món ăn vặt và khai vị nổi tiếng của Việt Nam, đặc trưng bởi sự thanh mát, lành mạnh và không dùng dầu mỡ. Nhân gồm tôm, thịt luộc, bún và rau sống, cuốn trong bánh tráng, chấm cùng tương đen hoặc mắm nêm. Được CNN bình chọn là một trong 50 món ăn ngon nhất thế giới, đây là món ăn bình dị, dễ ăn, xuất hiện từ quán vỉa hè đến nhà hàng sang trọng. Gỏi cuốn thường được dùng để đổi vị trong những ngày hè oi nóng.</p>
+<h3>Nguyên Liệu</h3>
+<ul>
+<li>Bánh tráng</li>
+<li>Tôm, thịt</li>
+<li>Bún</li>
+<li>Rau sống</li>
+</ul>
+<table>
+<tr><th>Giá</th><th>10.000 – 15.000đ/cuốn</th></tr>
+</table>
+<button onclick="goHome()">⬅ Quay lại</button>
+</div>
+
+<div id="huutieu" class="detail">
+<h2>HỦ TIẾU</h2>
+<img src="https://cdn.tgdd.vn/2020/09/CookRecipe/Avatar/hu-tieu-mi-thumbnail.jpg">
+<p>Hủ tiếu là món ăn đặc trưng vùng Nam Bộ, có nguồn gốc từ người Hoa (Triều Châu/Mân Nam) và phổ biến từ những năm 1950. Nổi bật với sợi hủ tiếu dai ngon từ gạo, nước dùng ngọt thanh hầm từ xương ống, kết hợp tỏi phi thơm lừng cùng đa dạng topping như thịt băm, tôm, gan, mực. Hủ tiếu không chỉ là bữa sáng hay bữa tối tiện lợi mà còn là nét đẹp ẩm thực bình dị của miền Nam Việt Nam.</p>
+<h3>Nguyên Liệu</h3>
+<ul>
+<li>Sợi hủ tiếu</li>
+<li>Thịt heo, tôm</li>
+<li>Nước dùng xương</li>
+<li>Rau thơm</li>
+</ul>
+<table>
+<tr><th>Giá</th><th>35.000 – 55.000đ</th></tr>
+</table>
+<button onclick="goHome()">⬅ Quay lại</button>
+</div>
+
+<div id="miquang" class="detail">
+<h2>MÌ QUẢNG</h2>
+<img src="https://i0.wp.com/vickypham.com/wp-content/uploads/2023/05/8faee-2023_04_28eosm56722.jpg">
+<p>Mì Quảng là món ăn đặc sản trứ danh của vùng đất Quảng Nam và Đà Nẵng, nổi bật với sợi mì gạo dai mềm màu trắng hoặc vàng (nhờ bột nghệ), nước dùng (nước nhân) cô đặc, ít nước nhưng đậm đà. Một tô mì đúng điệu kết hợp tôm, thịt heo/gà, đậu phộng rang, rau sống 9 vị, bánh tráng nướng và nước mắm ớt. Mì Quảng không chỉ là món ăn bình dân mà còn là biểu tượng văn hóa đậm đà của người dân miền Trung, mang hương vị mộc mạc, đậm đà và thể hiện sự hiếu khách.</p>
+<h3>Nguyên Liệu</h3>
+<ul>
+<li>Sợi mì vàng</li>
+<li>Tôm, thịt gà hoặc heo</li>
+<li>Đậu phộng rang</li>
+<li>Rau sống</li>
+</ul>
+<table>
+<tr><th>Giá</th><th>35.000 – 50.000đ</th></tr>
+</table>
+<button onclick="goHome()">⬅ Quay lại</button>
+</div>
+
+</body>
+</html>
